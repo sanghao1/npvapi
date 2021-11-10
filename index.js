@@ -51,13 +51,3 @@ router.route('/users/:ID').get((request,response)=>{
 app.listen(port);
 console.log("User API is Runing at "+port);
 
-
-
- const jsonServer = require('json-server');
-const server = jsonServer.create();
-const middlewares = jsonServer.defaults();
-
-server.use(middlewares);
-server.use(router);
-
-
